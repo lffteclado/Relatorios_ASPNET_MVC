@@ -19,16 +19,16 @@ namespace Relatorios_ASPNET_MVC.Models
 
             this.ToTable("Cliente");
             this.Property(t => t.ClienteId).HasColumnName("ClienteId");
-            this.Property(t => t.ClienteId).HasColumnName("Nome");
-            this.Property(t => t.ClienteId).HasColumnName("CpfCnpj");
-            this.Property(t => t.ClienteId).HasColumnName("Endereco");
-            this.Property(t => t.ClienteId).HasColumnName("Bairro");
-            this.Property(t => t.ClienteId).HasColumnName("Cidade");
-            this.Property(t => t.ClienteId).HasColumnName("Cep");
-            this.Property(t => t.ClienteId).HasColumnName("Email");
-            this.Property(t => t.ClienteId).HasColumnName("Telefone");
-            this.Property(t => t.ClienteId).HasColumnName("StatusCliente");
-            this.Property(t => t.ClienteId).HasColumnName("DataCadastro");
+            this.Property(t => t.Nome).HasColumnName("Nome");
+            this.Property(t => t.CpfCnpj).HasColumnName("CpfCnpj");
+            this.Property(t => t.Endereco).HasColumnName("Endereco");
+            this.Property(t => t.Bairro).HasColumnName("Bairro");
+            this.Property(t => t.Cidade).HasColumnName("Cidade");
+            this.Property(t => t.Cep).HasColumnName("Cep");
+            this.Property(t => t.Email).HasColumnName("Email");
+            this.Property(t => t.Telefone).HasColumnName("Telefone");
+            this.Property(t => t.StatusCliente).HasColumnName("StatusCliente");
+            this.Property(t => t.DataCadastro).HasColumnName("DataCadastro");
         }
     }
 }

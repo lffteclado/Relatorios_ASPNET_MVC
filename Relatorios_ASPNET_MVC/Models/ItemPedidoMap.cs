@@ -11,12 +11,12 @@ namespace Relatorios_ASPNET_MVC.Models
 
             this.ToTable("ItemPedido");
             this.Property(t => t.ItemPedidoId).HasColumnName("ItemPedidoId");
-            this.Property(t => t.ItemPedidoId).HasColumnName("PedidoCabId");
-            this.Property(t => t.ItemPedidoId).HasColumnName("ProdutoId");
-            this.Property(t => t.ItemPedidoId).HasColumnName("Quantidade");
-            this.Property(t => t.ItemPedidoId).HasColumnName("ValorUnitario");
-            this.Property(t => t.ItemPedidoId).HasColumnName("SubTotal");
-            this.Property(t => t.ItemPedidoId).HasColumnName("StatusItem");
+            this.Property(t => t.PedidoCabId).HasColumnName("PedidoCabId");
+            this.Property(t => t.ProdutoId).HasColumnName("ProdutoId");
+            this.Property(t => t.Quantidade).HasColumnName("Quantidade");
+            this.Property(t => t.ValorUnitario).HasColumnName("ValorUnitario");
+            this.Property(t => t.SubTotal).HasColumnName("SubTotal");
+            this.Property(t => t.StatusItem).HasColumnName("StatusItem");
 
             this.HasRequired(t => t.PedidoCabecalho)
                 .WithMany(t => t.ItemPedido)
