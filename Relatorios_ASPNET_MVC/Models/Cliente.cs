@@ -7,6 +7,8 @@ namespace Relatorios_ASPNET_MVC.Models
 {
     public class Cliente
     {
+        //VendaRelatorioDbContext _db = new VendaRelatorioDbContext();
+
         public Cliente()
         {
             this.PedidoCabecalho = new List<PedidoCabecalho>();
@@ -24,6 +26,29 @@ namespace Relatorios_ASPNET_MVC.Models
         public string StatusCliente { get; set; }
         public DateTime DataCadastro { get; set; }
         public virtual ICollection<PedidoCabecalho> PedidoCabecalho { get; set; }
+
+
+        //public void criaClientes()
+        //{
+        //    for (int i = 0; i <= 100; i++)
+        //    {
+        //        Cliente cli = new Cliente();
+
+        //        cli.Nome = "CLIENTE" + i;
+        //        cli.CpfCnpj = "123456789" + i;
+        //        cli.Endereco = "ENDERECO CLIENTE" + i;
+        //        cli.Bairro = "BAIRRO CLIENTE" + i;
+        //        cli.Cidade = "CIDADE CLIENTE" + i;
+        //        cli.Cep = "12122" + i;
+        //        cli.Email = "CLIENTE" + i + "@TESTE.COM.BR";
+        //        cli.Telefone = "3198318089" + i;
+        //        cli.StatusCliente = "ATIVO";
+        //        cli.DataCadastro = DateTime.Now;
+
+        //        _db.Clientes.Add(cli);
+        //        _db.SaveChanges();
+        //    }
+        //}
 
     }
 }
